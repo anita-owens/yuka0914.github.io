@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;/*勝手にパソコンが計算して余白を入れてしますので、それを防ぐためにこのコードを入れる*/
+}
+
+body {
+    margin: 0px;
+}
+
+.scrollbox {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.button {
+	position: fixed;
+	right: 0;
+	bottom: 50vh;
+}
+.container{
+	height: 100vh;
+	width: 400vw;/*this code has to be chaneged when I put new page*/
+	transition: margin-left 0.3s ease-out;
+}
+
+h1 {
+	color: red;
+	font-size: 10px;
+}
+
+.page {
+	background-color: white;
+	height: 100vh;/*"vh" はスクリーンの縦サイズのパーセンテージを意味する*/
+	width: 100vw;/*"vw" はスクリーンの横サイズのパーセンテージを意味する*/
+	border: 10px red solid;
+	float: left;
+
+}
+
+
+
+
+
