@@ -1,3 +1,0 @@
-{
-	"cmd": ["open", "-a", "Chrome", "$file"]
-}
