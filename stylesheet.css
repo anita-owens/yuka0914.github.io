@@ -10,6 +10,8 @@ body {
 	height: 100vh;
 	width: 400vw;/*this code has to be chaneged when I put new page*/
 	transition: margin-left 0.3s ease-out;
+}
+
 
 .scrollbox {
 	height: 100vh;
@@ -29,6 +31,12 @@ h1 {
 	font-family: Impact;
 }
 
+h4 {/*test to see if HTML is connected to CSS*/
+	color: green;
+	font-size: 100px;
+	font-family: Impact;
+}
+
 .page {
 	background-color: white;
 	height: 100vh;/*"vh" はスクリーンの縦サイズのパーセンテージを意味する*/
@@ -40,11 +48,8 @@ h1 {
 .introduction {
 	font-size: 30px;
 	font-family: Arial;
-	xolor: red;
+	color: red;
 }
 
-.seemoreButton {
-	
-}
 
 
