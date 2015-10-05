@@ -2,9 +2,11 @@ $(document).ready(function(){
 	console.log("hello world");
 
 	$(".button").click(function() {
-		var maxScroll= "-400vw";
+		maxScroll = $(".page").length;
+		console.log maxScroll;
+
 		// check how many .page children exists to know maximum negative value of margin-left
-		// if we have 4 .page the maximum should be -400vw so do something like 
+		// if we have 4 .page the maximum should be -400vw so do something like
 		// var maxScroll = number of .page*-100 and set that as a variable
 
 		// ALTERNATIVE

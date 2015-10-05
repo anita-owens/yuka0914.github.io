@@ -2,18 +2,47 @@ $(document).ready(function(){
 	console.log("hello world");
 
 	$(".button").click(function() {
-		var maxScroll= "-400vw";
+
+		// JS isn't good at vw so lets get the full width (100vw) in another way :)
+		fullWidth = $(window).width();
+
 		// check how many .page children exists to know maximum negative value of margin-left
-		// if we have 4 .page the maximum should be -400vw so do something like 
-		// var maxScroll = number of .page*-100 and set that as a variable
+		maxScroll = $(".page").length * -fullWidth;
 
-		// ALTERNATIVE
-		// Hide the button left if we are at the leftmost .page
-		// Hide the button right if we are at the rightmost .page
-		// when button left or right is clicked check if currentMargin is 0 or maxMargin (-400) if so hide left or right button
+		// How much scrolled is container now? we need to know so we can hide the buttons
+		currentScroll = $(".container").css("margin-left");
 
+		// pareFloat turns currentscroll from 0px to just 0, it removes the px that we get in the variable
+		currentScroll = parseFloat(currentScroll);
 
-  		$(".container").css("margin-left", "-100vw");
+		// when this ( .button ) is clicked we check if it next or back
+		if ( $( this ).hasClass( "next" ) ) {
+			// write it out se we see it in console
+			console.log("next");
+			// subtract from currentscroll
+			currentScroll = currentScroll - fullWidth;
+			// Set the margin on container
+			$(".container").css("margin-left", currentScroll);
+			// unhide the back button
+			$(".button.back").removeClass("hidden");
+		// if it isnt the next button its the back button so we do the opposite
+		} else {
+			console.log("back");
+			currentScroll = currentScroll + fullWidth;
+			$(".container").css("margin-left", currentScroll);
+			$(".button.next").removeClass("hidden");
+		}
+
+		// this checks the currentscroll and hides next or back button
+		if(currentScroll == 0) {
+			console.log("bigger than 0, therefore at start");
+			$(".button.back").addClass("hidden");
+		}
+		else if(currentScroll == maxScroll) {
+			console.log("at max");
+			$(".button.next").addClass("hidden");
+		}
+
 	});
 
 });

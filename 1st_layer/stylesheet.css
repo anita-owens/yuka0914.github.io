@@ -23,6 +23,24 @@ body {
 	position: fixed;
 	right: 0;
 	bottom: 50vh;
+	width: auto;
+	opacity: 1;
+	pointer-events: all;
+	transition: all 0.3s ease;
+	transform: none;
+	background: #cecece;
+	padding: 10px;
+}
+
+.button.back {
+	left: 0;
+	right: auto;
+}
+
+.hidden {
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(20px);
 }
 
 h1 {
@@ -50,6 +68,3 @@ h4 {/*test to see if HTML is connected to CSS*/
 	font-family: Arial;
 	color: red;
 }
-
-
-
