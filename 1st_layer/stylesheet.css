@@ -4,6 +4,19 @@
 
 body {
     margin: 0px;
+		font-family: Helvetica-Neue, Arial, sans-serif; /* Set font family here for what you want most of the text to be */
+}
+
+h1 {
+	color: blue;
+	font-size: 30px;
+	font-family: Impact;
+}
+
+p {
+	/* this will inherit the font family from body but you can overwrite for p specifically if you want to */
+	font-size: 12px;
+
 }
 
 /*For scroll effect*/
@@ -31,6 +44,7 @@ body {
 	transform: none;
 	background: #cecece;
 	padding: 10px;
+	z-index: 9;
 }
 
 .button.back {
@@ -39,19 +53,11 @@ body {
 }
 
 .hidden {
-	opacity: 0;
-	pointer-events: none;
-	transform: translateY(20px);
+	display: none;
 }
 
 
 /*For HOME styling*/
-h1 {
-	color: blue;
-	font-size: 30px;
-	font-family: Impact;
-}
-
 .home {
 	background-color: white;
 	height: 100vh;/*"vh" はスクリーンの縦サイズのパーセンテージを意味する*/
@@ -61,8 +67,41 @@ h1 {
 }
 
 .introduction {
-	font-size: 30px;
-	font-family: Arial;
-	color: red;
+
 }
 
+.secondLayer {
+
+}
+
+.factButton {
+	float: left;
+	display: block;
+	background-color: green;
+	width: auto;
+	cursor: pointer;
+}
+
+#chartTitle{
+    color: red;
+    width: 100vw;
+    height: 10vh;
+    border: green solid;
+}
+
+/* These 2 have to have width 100% togheter */
+#description{
+    padding: 10px;
+    float:left;
+    width:30%;
+    height:90vh;
+    border: black solid;
+}
+
+#chart{
+		position: relative;
+    float:left;
+    width:70%;
+    height:80vh;
+    border: blue solid;
+}

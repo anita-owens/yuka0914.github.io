@@ -1,6 +1,12 @@
 $(document).ready(function(){
 	console.log("hello world");
 
+	$(".factButton").click(function() {
+		console.log("fact button clicked");
+		$(this).parents(".home").find(".introduction").toggleClass("hidden");
+		$(this).parents(".home").find(".secondLayer").toggleClass("hidden");
+	});
+
 	$(".button").click(function() {
 
 		// JS isn't good at vw so lets get the full width (100vw) in another way :)
