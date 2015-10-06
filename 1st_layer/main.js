@@ -6,8 +6,8 @@ $(document).ready(function(){
 		// JS isn't good at vw so lets get the full width (100vw) in another way :)
 		fullWidth = $(window).width();
 
-		// check how many .page children exists to know maximum negative value of margin-left
-		maxScroll = $(".page").length * -fullWidth;
+		// check how many .home children exists to know maximum negative value of margin-left
+		maxScroll = ($(".home").length - 1) * -fullWidth;
 
 		// How much scrolled is container now? we need to know so we can hide the buttons
 		currentScroll = $(".container").css("margin-left");
