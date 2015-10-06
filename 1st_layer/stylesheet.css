@@ -6,6 +6,7 @@ body {
     margin: 0px;
 }
 
+/*For scroll effect*/
 .container{
 	height: 100vh;
 	width: 400vw;/*this code has to be chaneged when I put new page*/
@@ -43,19 +44,15 @@ body {
 	transform: translateY(20px);
 }
 
+
+/*For HOME styling*/
 h1 {
 	color: blue;
 	font-size: 30px;
 	font-family: Impact;
 }
 
-h4 {/*test to see if HTML is connected to CSS*/
-	color: green;
-	font-size: 100px;
-	font-family: Impact;
-}
-
-.page {
+.home {
 	background-color: white;
 	height: 100vh;/*"vh" はスクリーンの縦サイズのパーセンテージを意味する*/
 	width: 100vw;/*"vw" はスクリーンの横サイズのパーセンテージを意味する*/
@@ -68,3 +65,4 @@ h4 {/*test to see if HTML is connected to CSS*/
 	font-family: Arial;
 	color: red;
 }
+
