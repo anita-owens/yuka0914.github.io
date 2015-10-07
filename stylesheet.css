@@ -2,22 +2,29 @@
 	box-sizing: border-box;/*勝手にパソコンが計算して余白を入れてしますので、それを防ぐためにこのコードを入れる*/
 }
 
+
 body {
+	background-color: white;
+    color: black;
     margin: 0px;
-		font-family: Helvetica-Neue, Arial, sans-serif; /* Set font family here for what you want most of the text to be */
+	font-family: Arial; /* Set font family here for what you want most of the text to be */
 }
 
 h1 {
-	color: blue;
-	font-size: 30px;
-	font-family: Impact;
+	
+	border: 30px 50px solid red;
+	background-color: white;
+	color: black;
+	font-size: 60px;
+	font-family: Helvetica;
 }
 
 p {
 	/* this will inherit the font family from body but you can overwrite for p specifically if you want to */
-	font-size: 12px;
-
+	font-size: 20px;
 }
+
+
 
 /*For scroll effect*/
 .container{
@@ -36,7 +43,7 @@ p {
 .button {
 	position: fixed;
 	right: 0;
-	bottom: 50vh;
+	bottom: 40vh;
 	width: auto;
 	opacity: 1;
 	pointer-events: all;
@@ -59,18 +66,53 @@ p {
 
 /*For HOME styling*/
 .home {
-	background-color: white;
+	border: white solid 20% 10%;
 	height: 100vh;/*"vh" はスクリーンの縦サイズのパーセンテージを意味する*/
 	width: 100vw;/*"vw" はスクリーンの横サイズのパーセンテージを意味する*/
-	border: 10px red solid;
+	padding: 30px;
 	float: left;
 }
 
-.introduction {
+    /*backgroud pics for each HOME pages*/
+	#home0 {
+	    background: url(https://lh3.googleusercontent.com/-TVQdZmrv6hE/VhUVhS33xXI/AAAAAAAAAY4/aoQeUEVenX8/s720-Ic42/tokyo5.jpg);
+	    /*I tried to put this "backgroud-repeat" and "backgroud-size" code on the ".home" div, 
+	    but it didn't work so I'm just typyng the sama code 3 times which I know this makes you mad lol*/
+	    background-repeat: no-repeat;
+	    background-size: 100% 100%;
+	}
 
+	#home1 {
+	    background: url(https://lh3.googleusercontent.com/-fdLD14OQnz0/VhUQQh7ZepI/AAAAAAAAAXc/y3UydkRRKYI/s512-Ic42/sushi_medium.jpg);
+	    background-repeat: no-repeat;
+	    background-size: 100% 100%;
+	}
+
+	#home2 {
+	    background: url(https://lh3.googleusercontent.com/-XwoOnHfR04w/VhUQREpQDUI/AAAAAAAAAXw/G8fwg7X_7oI/s512-Ic42/highTech_weak.jpg);
+	    background-repeat: no-repeat;
+	    background-size: 100% 100%;
+	}
+
+	#home3 {
+	    background: url(https://lh3.googleusercontent.com/-sqdQZJKtMZk/VhUQQ5u9-1I/AAAAAAAAAXg/-zvh_dloZ4g/s512-Ic42/fuji_weak.jpg);
+	    background-repeat: no-repeat;
+	    background-size: 100% 100%;
+	}
+
+
+.introduction {
+	bottom: 10vh;
+	width:50vw;
+	height:35vh;
+	padding: 15px;
+	border: 10px solid black;
+	background-color: white;
+	color: black;
 }
 
 .secondLayer {
+	background-color: white;
 
 }
 
@@ -86,7 +128,6 @@ p {
     color: red;
     width: 100vw;
     height: 10vh;
-    border: green solid;
 }
 
 /* These 2 have to have width 100% togheter */
@@ -95,7 +136,6 @@ p {
     float:left;
     width:30%;
     height:90vh;
-    border: black solid;
 }
 
 #chart{
@@ -103,5 +143,4 @@ p {
     float:left;
     width:70%;
     height:80vh;
-    border: blue solid;
 }
