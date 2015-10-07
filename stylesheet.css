@@ -5,23 +5,27 @@
 
 body {
 	background-color: white;
-    color: black;
     margin: 0px;
 	font-family: Arial; /* Set font family here for what you want most of the text to be */
 }
 
 h1 {
-	
-	border: 30px 50px solid red;
 	background-color: white;
 	color: black;
 	font-size: 60px;
 	font-family: Helvetica;
+	margin-bottom: 15px;
 }
 
 p {
 	/* this will inherit the font family from body but you can overwrite for p specifically if you want to */
 	font-size: 20px;
+}
+
+a{
+    color: white;
+    font-style:normal;
+    text-decoration:underline;
 }
 
 
@@ -83,19 +87,19 @@ p {
 	}
 
 	#home1 {
-	    background: url(https://lh3.googleusercontent.com/-fdLD14OQnz0/VhUQQh7ZepI/AAAAAAAAAXc/y3UydkRRKYI/s512-Ic42/sushi_medium.jpg);
+	    background: url(https://lh3.googleusercontent.com/-LGkmG3Bnre0/VhVWwncfYnI/AAAAAAAAAZ8/PPZqiylU8x4/s720-Ic42/sushi_darker.jpg);
 	    background-repeat: no-repeat;
 	    background-size: 100% 100%;
 	}
 
 	#home2 {
-	    background: url(https://lh3.googleusercontent.com/-XwoOnHfR04w/VhUQREpQDUI/AAAAAAAAAXw/G8fwg7X_7oI/s512-Ic42/highTech_weak.jpg);
+	    background: url(https://lh3.googleusercontent.com/-CgZuEjonjbA/VhVVZFZ51GI/AAAAAAAAAZk/Uo0BL3Z7mZE/s720-Ic42/hightech3_dark.jpg);
 	    background-repeat: no-repeat;
 	    background-size: 100% 100%;
 	}
 
 	#home3 {
-	    background: url(https://lh3.googleusercontent.com/-sqdQZJKtMZk/VhUQQ5u9-1I/AAAAAAAAAXg/-zvh_dloZ4g/s512-Ic42/fuji_weak.jpg);
+	    background: url(https://lh3.googleusercontent.com/-cbm1EfDzDAc/VhVWwTnuMcI/AAAAAAAAAZ4/zvEVlOxEv6k/s720-Ic42/fuji_darker.jpg);
 	    background-repeat: no-repeat;
 	    background-size: 100% 100%;
 	}
@@ -109,12 +113,9 @@ p {
 	border: 10px solid black;
 	background-color: white;
 	color: black;
+	margin-top: 50px;
 }
 
-.secondLayer {
-	background-color: white;
-
-}
 
 .factButton {
 	float: left;
@@ -125,21 +126,25 @@ p {
 }
 
 #chartTitle{
-    color: red;
-    width: 100vw;
-    height: 10vh;
+	margin-top: 0;
+    color: white;
+    font-size: 42px;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 /* These 2 have to have width 100% togheter */
 #description{
-    padding: 10px;
+    padding: 20px;
     float:left;
+    margin-top: 10px;
     width:30%;
-    height:90vh;
+    height:30%;
+    color: white;
 }
 
 #chart{
-		position: relative;
+	position: relative;
     float:left;
     width:70%;
     height:80vh;
