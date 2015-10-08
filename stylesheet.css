@@ -47,13 +47,12 @@ span{
 .button {
 	position: fixed;
 	right: 0;
-	bottom: 40vh;
+	bottom: 28vh;
 	width: auto;
 	opacity: 1;
 	pointer-events: all;
 	transition: all 0.3s ease;
 	transform: none;
-	background: #cecece;
 	padding: 10px;
 	z-index: 9;
 }
@@ -62,6 +61,8 @@ span{
 	left: 0;
 	right: auto;
 }
+
+
 
 .hidden {
 	display: none;
@@ -143,22 +144,24 @@ span{
 
 
 #chartTitle{
-	margin-top: 0;
+	margin-top: 25px;
+	margin-bottom: 10px;
     color: white;
-    font-size: 42px;
-    font-family: sans-serif;
+    font-size: 45px;
+    font-family: Helvetica;
     text-align: center;
+    
 }
 
 /* These 2 have to have width 100% togheter */
 #description{
-    padding: 20px;
+    padding: 25px;
     float:left;
     margin-top: 45px;
     width:30%;
     height:30%;
     color: white;
-    font-family: Helvetica;
+    font-family: Arial;
     font-size:17px;
 }
 
