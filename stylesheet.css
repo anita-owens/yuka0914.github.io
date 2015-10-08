@@ -6,7 +6,7 @@
 body {
 	background-color: white;
     margin: 0px;
-	font-family: Arial; /* Set font family here for what you want most of the text to be */
+ /* Set font family here for what you want most of the text to be */
 }
 
 h1 {
@@ -17,15 +17,15 @@ h1 {
 	margin-bottom: 15px;
 }
 
-p {
-	/* this will inherit the font family from body but you can overwrite for p specifically if you want to */
-	font-size: 20px;
-}
 
 a{
     color: white;
     font-style:normal;
     text-decoration:underline;
+}
+
+span{
+	font-size: 35px;
 }
 
 
@@ -107,23 +107,40 @@ a{
 
 .introduction {
 	bottom: 10vh;
-	width:50vw;
+	width:40vw;
 	height:35vh;
 	padding: 15px;
+	margin-top: 50px;
 	border: 10px solid black;
 	background-color: white;
 	color: black;
-	margin-top: 50px;
+	font-family: Impact;
+	font-size: 20px;
 }
 
 
 .factButton {
 	float: left;
 	display: block;
-	background-color: green;
-	width: auto;
+	color: white;
+	margin-left: 420px;
+	margin-top: 10px;
+	width: 150px;
+	height: 150px;
+	padding: 40px;
+	background: black;
+	text-align: left;
 	cursor: pointer;
+  	border: solid 7px red;
+  	position:static;
 }
+
+.factButton:hover,section.factButton.hover {
+	 border-color: red;
+	 color: red;
+}
+
+
 
 #chartTitle{
 	margin-top: 0;
@@ -137,10 +154,12 @@ a{
 #description{
     padding: 20px;
     float:left;
-    margin-top: 10px;
+    margin-top: 45px;
     width:30%;
     height:30%;
     color: white;
+    font-family: Helvetica;
+    font-size:17px;
 }
 
 #chart{
