@@ -76,33 +76,28 @@ span{
 	width: 100vw;/*"vw" はスクリーンの横サイズのパーセンテージを意味する*/
 	padding: 30px;
 	float: left;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
     /*backgroud pics for each HOME pages*/
 	#home0 {
-	    background: url(https://lh3.googleusercontent.com/-TVQdZmrv6hE/VhUVhS33xXI/AAAAAAAAAY4/aoQeUEVenX8/s720-Ic42/tokyo5.jpg);
-	    /*I tried to put this "backgroud-repeat" and "backgroud-size" code on the ".home" div, 
+	    background-image: url(https://lh3.googleusercontent.com/-TVQdZmrv6hE/VhUVhS33xXI/AAAAAAAAAY4/aoQeUEVenX8/s720-Ic42/tokyo5.jpg);
+	    /*I tried to put this "backgroud-repeat" and "backgroud-size" code on the ".home" div,
 	    but it didn't work so I'm just typyng the sama code 3 times which I know this makes you mad lol*/
-	    background-repeat: no-repeat;
-	    background-size: 100% 100%;
 	}
 
 	#home1 {
-	    background: url(https://lh3.googleusercontent.com/-LGkmG3Bnre0/VhVWwncfYnI/AAAAAAAAAZ8/PPZqiylU8x4/s720-Ic42/sushi_darker.jpg);
-	    background-repeat: no-repeat;
-	    background-size: 100% 100%;
+	    background-image: url(https://lh3.googleusercontent.com/-LGkmG3Bnre0/VhVWwncfYnI/AAAAAAAAAZ8/PPZqiylU8x4/s720-Ic42/sushi_darker.jpg);
 	}
 
 	#home2 {
-	    background: url(https://lh3.googleusercontent.com/-CgZuEjonjbA/VhVVZFZ51GI/AAAAAAAAAZk/Uo0BL3Z7mZE/s720-Ic42/hightech3_dark.jpg);
-	    background-repeat: no-repeat;
-	    background-size: 100% 100%;
+	    background-image: url(https://lh3.googleusercontent.com/-CgZuEjonjbA/VhVVZFZ51GI/AAAAAAAAAZk/Uo0BL3Z7mZE/s720-Ic42/hightech3_dark.jpg);
 	}
 
 	#home3 {
-	    background: url(https://lh3.googleusercontent.com/-cbm1EfDzDAc/VhVWwTnuMcI/AAAAAAAAAZ4/zvEVlOxEv6k/s720-Ic42/fuji_darker.jpg);
-	    background-repeat: no-repeat;
-	    background-size: 100% 100%;
+	    background-image: url(https://lh3.googleusercontent.com/-cbm1EfDzDAc/VhVWwTnuMcI/AAAAAAAAAZ4/zvEVlOxEv6k/s720-Ic42/fuji_darker.jpg);
+
 	}
 
 
@@ -150,7 +145,7 @@ span{
     font-size: 45px;
     font-family: Helvetica;
     text-align: center;
-    
+
 }
 
 /* These 2 have to have width 100% togheter */
