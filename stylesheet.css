@@ -1,154 +1,36 @@
-* {
-	box-sizing: border-box;/*勝手にパソコンが計算して余白を入れてしますので、それを防ぐためにこのコードを入れる*/
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x:hidden;
+    position:relative;
 }
-
-
-body {
-	background-color: white;
-    margin: 0px;
- /* Set font family here for what you want most of the text to be */
+nav{
+    position:absolute;
+    top:0; left:0;
+    height:30px;
 }
-
-h1 {
-	background-color: white;
-	color: black;
-	font-size: 60px;
-	font-family: Helvetica;
-	margin-bottom: 15px;
+.wrapper {
+    height: 100%;
+    background: #263729;
 }
-
-
-a{
-    color: white;
-    font-style:normal;
-    text-decoration:underline;
-}
-
-span{
-	font-size: 35px;
-}
-
-
-
-/*For scroll effect*/
-.container{
-	height: 100vh;
-	width: 400vw;/*this code has to be chaneged when I put new page*/
-	transition: margin-left 0.3s ease-out;
-}
-
-
-.scrollbox {
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
-}
-
-.button {
-	position: fixed;
-	right: 0;
-	bottom: 28vh;
-	width: auto;
-	opacity: 1;
-	pointer-events: all;
-	transition: all 0.3s ease;
-	transform: none;
-	padding: 10px;
-	z-index: 9;
-}
-
-.button.back {
-	left: 0;
-	right: auto;
-}
-
-
-
-.hidden {
-	display: none;
-}
-
-
-/*For HOME styling*/
-.home {
-	border: white solid 20% 10%;
-	height: 100vh;/*"vh" はスクリーンの縦サイズのパーセンテージを意味する*/
-	width: 100vw;/*"vw" はスクリーンの横サイズのパーセンテージを意味する*/
-	padding: 30px;
-	float: left;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-    /*backgroud pics for each HOME pages*/
-
-
-
-
-.introduction {
-	bottom: 10vh;
-	width:40vw;
-	height:35vh;
-	padding: 15px;
-	margin-top: 50px;
-	border: 10px solid black;
-	background-color: white;
-	color: black;
-	font-family: Impact;
-	font-size: 20px;
-	position:absolute;
-
-}
-
-
-.factButton {
-	float: left;
-	display: block;
-	color: white;
-	margin-left: 420px;
-	margin-top: 10px;
-	width: 150px;
-	height: 150px;
-	padding: 40px;
-	background: black;
-	text-align: left;
-	cursor: pointer;
-  	border: solid 7px red;
-  	position:static;
-}
-
-.factButton:hover,section.factButton.hover {
-	 border-color: red;
-	 color: red;
-}
-
-
-
-#chartTitle{
-	margin-top: 25px;
-	margin-bottom: 10px;
-    color: white;
-    font-size: 45px;
-    font-family: Helvetica;
-    text-align: center;
-
-}
-
-/* These 2 have to have width 100% togheter */
-#description{
-    padding: 25px;
+.page {
     float:left;
-    margin-top: 45px;
-    width:30%;
-    height:30%;
-    color: white;
-    font-family: Arial;
-    font-size:17px;
+    background: #992213;
+    min-height: 100%;
+    padding-top: 30px;
 }
-
-#chart{
-	position: relative;
-    float:left;
-    width:70%;
-    height:80vh;
+#page-1 {
+    background: #0C717A;
+}
+#page-2 {
+    background: #009900;
+}
+#page-3 {
+    background: #0000FF;
+}
+a {
+    color:#FFF;
+}
+a.selected{
+    color: red;
 }
