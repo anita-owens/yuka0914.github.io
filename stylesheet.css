@@ -160,7 +160,7 @@ font-weight: bold;
 
 
 #page-2 {
-    background: #009900;
+   /* background: #009900;*/
 }
 #page-3 {
     background: #0000FF;
@@ -290,3 +290,11 @@ span[class ^= "icon"]{
     background-color: #000000;
     opacity:0.4;
 }
+
+#map {
+    width:950px;
+    height:550px;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
