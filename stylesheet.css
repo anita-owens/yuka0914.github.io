@@ -65,7 +65,7 @@ a {
   }
 
   h3 {
-  font-size: 25px;
+  font-size: 16px;
   margin-left: 50px;
   font-family: helvetica;
   color: #FFFFFF;
@@ -103,7 +103,7 @@ margin-left: 130px;
 }
 
 h3 {
-font-size: 16px;
+font-size: 14px;
 margin-left: 130px;
 font-family: helvetica;
 color: #FFFFFF;
@@ -130,16 +130,15 @@ font-weight: bold;
 
 .menuright {
   float: right;
-  margin-right: 80px;}
+  margin-right: 80px;
+}
 
 
 .menuRight{
     height: 20%;
     position: absolute;
-    right: 10px;
-    font-size: 16px;
-    text-decoration: none;
-    font-style: none;
+    right: 40px;
+    font-size: 14px;
 }
 
 
@@ -160,10 +159,10 @@ font-weight: bold;
 
 
 #page-2 {
-    background: #009900;
+    background: #194656;
 }
 #page-3 {
-    background: #0000FF;
+    background: #194656;
 }
 
 #page-4 {
@@ -174,6 +173,7 @@ background: #0000FF;
 a {
     color:#FFF;
     margin-right: 15px;
+    font-size: 14px;
 }
 a.selected{
     color: red;
