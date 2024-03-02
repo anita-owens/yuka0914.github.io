@@ -1,46 +1,135 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<html xmlns="http://www.w3.org/1999/xhtml">
-		<link type="text/css" rel="stylesheet" href="stylesheet.css">
-		<script src="jquery-2.1.4.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="main.js"></script>
- 		<title>Indivisual Task</title>
-	</head>
 
-	<body>
-	<div class="wrapper"><!--this div is for Horizontal scroll so don't touch it!-->
-    <nav>
-        <a href="#page-1" class="scrollitem selected">page 1</a>
-        <a href="#page-2" class="scrollitem">page 2</a>
-        <a href="#page-3" class="scrollitem">page 3</a>
-    </nav>
+<head>
+<!--for Horizontal scroll effect-->  
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<script src="main.js"></script>
 
-    <div id="page-1" class="page"> <!--SIMON'S page will be here for "introduction"-->
-    	
-        <h3>page 1</h3>
-        <div class="simulate">Simulated content heigher than 100%</div>
+
+<!--for D3 chart-->  
+  
+  <script src="http://phuonghuynh.github.io/js/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/d3/d3.min.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/d3-transform/src/d3-transform.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/extarray.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/misc.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/> </style>
+</head>
+
+
+<body>
+<div class="wrapper">
+      <div class = "pageMenu">
+        <div class = "menuRight">
+
+          <a href="#page-1" class="scrollitem clicked">HOME</a>
+          <a href="#page-2" class="scrollitem" onclick="crime0()">MAP</a>
+          <a href="#page-3" class="scrollitem">STATISTICS</a>
+           <a href="#page-4" class="scrollitem">ABOUT</a>
+
+        </div>
+
+        <div class = "left">
+          <img src="https://lh3.googleusercontent.com/-UNPzwhS81vc/VjCUJuu04PI/AAAAAAAAAck/u_L8xDg2-JM/s409-Ic42/logo.png" width ="100"height= "38"/>
+        </div>
+      </div>
+
+  <div id="page-1" class="page"> 
+    <!--code from Simon-->
+    <div class="background-wrap">
+        <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <source src="venicesthlms.mp4" type="video/mp4"></source>
+        <!--need to change the URL of the videolink to make it public?-->
+        </video>
+        <div class="video-overlay"></div>
+    </div> 
+
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+        <h1>Real-time crime reports</h1> 
+        <h2>directly from the swedish police</h2>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <h3>TO THE MAP</h3>
+    &nbsp;
+
+ </div><!--close: id"page-1"-->
+
+
+
+<<<<<<< HEAD
+  <div id="page-2" class="page"> 
+    
+      
+      <div id="map"></div>
+      <script type="text/javascript" src="crimenew.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSnC7uiV4jW3hoJa_kYB0TKVXhIgI7vU8&signed_in=true&callback=initMap"></script>
+      
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    
+    <div>
+      <input id="seecrimes" type="button" onclick="crime0()">
     </div>
+      
+=======
+  <div id="page-2" class="page">  
+      <div class="simulate"></div>
+>>>>>>> origin/master
+  </div>
 
+  <div id="page-3" class="page"> 
 
-
-
-    <div id="page-2" class="page"><!--Lukasz's and Anita's page will be here for "map"-->
-        <h3>page 2</h3>
-        <div class="simulate">Simulated content heigher than 100%</div>
-    </div>
-
-
-    <div id="page-3" class="page"> <!--Yuka's page will be here for "graph"-->
-        <h3>page 3</h3>
-        <div class="simulate">Simulated content heigher than 100%</div>
-    </div>
+  
+  <div class="bubbleChart"></div>
 </div>
-			
 
+  <div id="page-4" class="page"> 
 
-	</body>
+      <div id="page4content">
+   <P>&nbsp;</P>
+    <P>&nbsp;</P>
+    <P>&nbsp;</P>
+
+        <h6> About the project and the team</h6>
+      
+
+    <P>&nbsp;</P>
+        <h6><strong>The project<strong></h6>
+
+        <h5> The purpose of this project is to create a digital product that makes a positive impact and increases awareness of crime related issues in Stockholm.
+        </h5>
+
+        <h5>The 'crimezonesthlm' web visualises and maps crime reports provided by the Swedish Police in real time.</h5>
+
+     
+
+        <h7><strong>Meet the Team<strong></h7>
+        
+        <h5> We are motivated and data driven Hyper Island students who are committed to build upon today's technologies for a better tomorrow!</h5>
+
+        
+
+   
+
+</body>
 </html>
